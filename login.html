@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TheGym - Login</title>
+  <link rel="stylesheet" href="css/login.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(img/bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .logo {
+    text-decoration: none;
+    color: tomato;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  </style>
+<script>
+  function validateForm() {
+     // username
+    var un = document.registration.uname.value;
+    var letters = /^[A-Z][a-zA-Z0-9_\s]+$/
+    if (un.trim() === "") {
+        alert("Please enter your username");
+        document.registration.uname.focus();
+        return false;
+    }
+    if (un.length < 6) {
+        alert("Username must contain minimum 6 characters");
+        document.registration.uname.focus();
+        return false;
+    }
+    if (!un.match(letters)) {
+        alert("Enter valid username");
+        document.registration.uname.focus();
+        return false;
+    }
+    // password
+    var pass = document.registration.pwd.value;
+    var checkSpecial = /[*@!#%&]+/.test(pass);
+    var checkUpper = /[A-Z]+/.test(pass);
+    var checkLower = /[a-z]+/.test(pass);
+    if (pass.trim() === "") {
+        alert("Please enter your Password");
+        document.registration.pwd.focus();
+        return false;
+    }
+    if (!checkSpecial || !checkLower || !checkUpper) {
+        alert("Password should have at least one lowercase, uppercase, and special symbols ($, &, #)");
+        document.registration.pwd.focus();
+        return false;
+    }
+    return true; // Form submission will only proceed if all conditions pass
+  }
+</script>
+</head>
+
+<body>
+  <div class="wrapper">
+	<form class="login" name="registration" onsubmit="return validateForm();" action="login.jsp">
+      <h1 class="logo">TheGym</h1>
+
+      <h2 align="center">Login</h2>
+    
+      <div class="input-box">
+        <input type="text" name="uname" placeholder="Username" required>
+        <i class='bx bxs-user'></i>
+      </div>
+
+      <div class="input-box">
+        <input type="password" name="pwd" placeholder="Password" required>
+        <i class='bx bxs-lock-alt' ></i>
+      </div>
+      <br>
+      <div class="remember-forgot">
+        <label><input type="checkbox">Remember Me</label>
+        <a href="#">Forgot Password</a>
+      </div>
+      
+      <button type="submit" class="btn">Login</button>
+      
+      <div class="register-link">
+        <p>Don't have an account? <a href="signup.html">Register</a></p>
+      </div>
+    
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&family=Poppins:wght@300;400;500&display=swap');
+*{
+  padding: 4px;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: 0.2s linear;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+}
+body{
+ background: #000;
+}
+.btn{
+  margin-top: 2rem;
+  padding: 12px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn:hover{
+  background: rgba(212, 48, 48, 0.76);
+  transition: 0.4s;
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 1.5rem 3%;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  justify-content: space-between;
+  background-color: white;
+}
+.header .logo{
+  font-size: 30px;
+  font-weight: bolder;
+  color:#ec4141;
+  padding-right: 10px;
+  margin-right: 20rem;
+}
+.header .logo i{
+  color: #000;
+  padding: 0.5rem;
+}
+
+.header .logo i:hover{
+  text-shadow: 2px;
+  color: #000;
+}
+
+.header .navbar {
+  display: flex;
+  align-items: center;
+}
+
+
+
+.header .navbar a{
+  font-size: 1.1rem;
+  margin: 0 10px;
+  color: #000;
+}
+.header .navbar a:hover{
+  color: #ec4141;
+}
+.header .btn{
+  background: transparent;
+  //color: tomato;
+  border: 2px solid #ec4141;
+  font-size: 12px;
+  padding: 8px;
+}
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #000;
+  }
+  
+  .subscription-details {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  thead {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .form-img {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .form-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  

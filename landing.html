@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TheGym - Welcome!</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        display: flex;
+        min-height: 100vh;
+      }
+
+      .background-image {
+        background-image: url("https://wallpapertag.com/wallpaper/full/c/5/9/143959-gym-wallpaper-1920x1200-for-iphone.jpg");
+        background-size: cover;
+        background-position: center;
+        flex: 1;
+      }
+
+      .button-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white; /* Adjust button text color based on background image */
+        background: white;
+        border-radius: 25px 25px 35px 35px;
+      }
+
+      .button-container h1 {
+        font-size: 3em;
+        margin-bottom: -15px;
+        color: tomato;
+
+      }
+
+      .button-container a{
+        text-decoration: none;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .btn-user {
+        background-color: #007bff;
+        color: white;
+      }
+
+      .btn-admin {
+        background-color: #dc3545;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background-image"></div>
+
+    <div class="button-container">
+      <h1>Welcome to TheGym!</h1>
+      <p style="color :purple ;">Get fit and reach your fitness goals with us.</p>
+      <a href="login.html" class="btn btn-user">User Login</a>
+      <a href="admin_login.html" class="btn btn-admin">Admin Login</a>
+    </div>
+
+    <script></script>
+  </body>
+</html>
